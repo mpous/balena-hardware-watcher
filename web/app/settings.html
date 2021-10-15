@@ -16,25 +16,13 @@
 
   <div class="row" style="margin-top: 50px;">
     <p>Motion Detection</p>
-    <label for="enable-motion">Enable motion to capture birds not classified by the ML model and retrain the system</label>
+    <label for="enable-motion">Enable motion to capture balena hardware not classified by the ML model and retrain the system</label>
     <input type="checkbox" id="enable-motion" checked>
     <div>
       <button id="motion-update" style="margin-top: 20px;" onclick="motionupdate()">Update Motion Detection</button>
     </div>
   </div>
 
-  
-
-  <div class="row" style="margin-top: 50px;">
-    <p>Telegram Notification</p>
-    <label for="tg-chat-id">Telegram Chat ID</label>
-    <input type="text" id="tg-chat-id" placeholder="Telegram Chat ID">
-    <label for="tg-token">Telegram API key</label>
-      <input type="text" id="tg-token" placeholder="Telegram Bot key">
-    </div>
-    <div>
-      <button id="tg-update" style="margin-top: 20px;" onclick="tgupdate()">Update Telegram credentials</button>
-  </div>
   
   <div>
     <div class="row" style="margin-top: 50px;">
@@ -47,20 +35,7 @@
       <button id="ei-update" style="margin-top: 20px;" onclick="eiupdate()">Update Edge Impulse API key</button>
     </div>
   </div>
-
-  <div>
-    <div class="row" style="margin-top: 50px;">
-      <p>Position your BirdWatcher or leave it 0, 0 if you want to stay private</p>
-      <label for="latitude">Latitude</label>
-      <input type="text" id="latitude" placeholder="Latitude">
-      <label for="longitude">Longitude</label>
-      <input type="text" id="longitude" placeholder="Longitude">
-    </div>
-    <div>
-      <button id="geo-update" style="margin-top: 20px;" onclick="geoupdate()">Geolocate your BirdWatcher</button>
-    </div>
-  </div>
-
+  
   <div>
     <div class="row" style="margin-top: 50px;">
       <p>Website Credentials</p>
